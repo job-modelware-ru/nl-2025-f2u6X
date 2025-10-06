@@ -1,0 +1,18 @@
+# Базовый образ Elixir
+FROM elixir:1.16-alpine
+
+# Устанавливаем hex и rebar (менеджеры пакетов)
+RUN mix local.hex --force && \
+    mix local.rebar --force
+
+# Указываем рабочую директорию
+WORKDIR /app
+
+# Копируем файлы проекта
+COPY . .
+
+# Устанавливаем зависимости
+RUN mix deps.get
+
+# Команда по умолчанию — запуск приложения
+CMD ["iex", "-S", "mix"]
