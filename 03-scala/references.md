@@ -1,0 +1,2 @@
+-  https://docs.scala-lang.org/ru/scala3/book/
+-  https://scalabook.ru/
