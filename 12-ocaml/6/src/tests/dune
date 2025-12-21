@@ -1,0 +1,4 @@
+(tests
+ (names test_my_lib)
+ (libraries core my_lib ounit2)
+ (preprocess (pps ppx_jane)))

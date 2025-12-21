@@ -1,0 +1,9 @@
+(lang dune 3.8)
+(name myproject)
+(package
+ (name myproject)
+ (synopsis "A cool OCaml project")
+ (description "A longer description of the project")
+ (depends ocaml dune)
+ (authors "Your Name")
+ (license MIT))

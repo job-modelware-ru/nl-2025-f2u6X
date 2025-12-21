@@ -1,0 +1,25 @@
+opam-version: "2.0"
+name: "myproject"
+version: "0.1.0"
+
+build: [
+  ["dune" "build" "-p" name "-j" jobs]
+]
+
+depends: [
+  "ocaml" {>= "4.08.0"}
+  "dune" {>= "2.0.0"}
+  "cohttp-async"
+]
+
+myapp/
+  dune-project
+  bin/
+    dune
+    main.ml
+  lib/
+    dune
+    myapp.ml
+  tests/
+    dune
+    tests.ml
