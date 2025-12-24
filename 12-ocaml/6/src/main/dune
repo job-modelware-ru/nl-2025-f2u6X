@@ -1,0 +1,5 @@
+(executable
+ (name main)
+ (public_name myproject)
+ (libraries core my_lib)
+ (preprocess (pps ppx_jane)))
